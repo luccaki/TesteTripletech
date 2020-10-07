@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using TesteTripletech.Services;
 
 namespace TesteTripletech
 {
@@ -17,6 +18,11 @@ namespace TesteTripletech
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+
+            using (var client = new DatabaseContext())
+            {
+                client.Database.EnsureCreated();
+            }
         }
 
         public IConfiguration Configuration { get; }
@@ -33,6 +39,12 @@ namespace TesteTripletech
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddEntityFrameworkSqlite().AddDbContext<DatabaseContext>();
+
+            services.AddScoped<PessoaService>();
+            services.AddScoped<AgendamentoService>();
+            services.AddScoped<PessoaAgendamentoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

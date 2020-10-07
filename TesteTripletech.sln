@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30517.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTripletech", "TesteTripletech\TesteTripletech.csproj", "{6A0E4EE9-B827-44E4-9EC3-F4958922463C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteTripletech", "TesteTripletech\TesteTripletech.csproj", "{A3F1DBE4-2036-434F-BC1D-3C8A2DE355E0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6A0E4EE9-B827-44E4-9EC3-F4958922463C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6A0E4EE9-B827-44E4-9EC3-F4958922463C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6A0E4EE9-B827-44E4-9EC3-F4958922463C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6A0E4EE9-B827-44E4-9EC3-F4958922463C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3F1DBE4-2036-434F-BC1D-3C8A2DE355E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3F1DBE4-2036-434F-BC1D-3C8A2DE355E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3F1DBE4-2036-434F-BC1D-3C8A2DE355E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3F1DBE4-2036-434F-BC1D-3C8A2DE355E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {6C2410CF-DE2D-46CD-A342-8C6401A05978}
+		SolutionGuid = {8F5C2599-FC34-4305-BFE1-147F9BC237E4}
 	EndGlobalSection
 EndGlobal
