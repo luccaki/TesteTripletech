@@ -43,9 +43,9 @@ namespace TesteTripletech.Services
                 foreach (var obj in result)
                 {
                     if (obj.pessoaid == id && ((dataInicio > obj.DataInicio && dataFim < obj.DataFim) ||
-                                              (dataInicio < obj.DataInicio && dataFim < obj.DataFim) ||
-                                              (dataInicio > obj.DataInicio && dataFim > obj.DataFim) ||
-                                              (dataInicio < obj.DataInicio && dataFim > obj.DataFim)))
+                                               (dataInicio < obj.DataInicio && dataFim < obj.DataFim && dataFim > obj.DataInicio) ||
+                                               (dataInicio > obj.DataInicio && dataFim > obj.DataFim && dataInicio < obj.DataFim) ||
+                                               (dataInicio < obj.DataInicio && dataFim > obj.DataFim)))
                     {
                         return false;
                     }
@@ -61,8 +61,8 @@ namespace TesteTripletech.Services
             foreach (var obj in result)
             {
                 if (obj.Id == id && ((dataInicio > obj.DataInicio && dataFim < obj.DataFim) ||
-                                     (dataInicio < obj.DataInicio && dataFim < obj.DataFim) ||
-                                     (dataInicio > obj.DataInicio && dataFim > obj.DataFim) ||
+                                     (dataInicio < obj.DataInicio && dataFim < obj.DataFim && dataFim > obj.DataInicio) ||
+                                     (dataInicio > obj.DataInicio && dataFim > obj.DataFim && dataInicio < obj.DataFim) ||
                                      (dataInicio < obj.DataInicio && dataFim > obj.DataFim)))
                 {
                     return false;

@@ -57,31 +57,7 @@ namespace TesteTripletech.Controllers
             DateTime dataFim = DateTime.Parse(dataTexto[1]);
 
             Boolean result = _agendamentoService.Adicionar(Ids,dataInicio,dataFim);
-            string query;
-            if (result){
-                query = "INSERT INTO agendamento (local, datainicio, datafim) " +
-                    "VALUES('null', '2020-06-30 12:00:00', '2020-06-30 22:00:00');" +
-
-                    "   INSERT INTO pessoaagendamento (pessoaid, agendamentoid) " +
-                    "SELECT '1', agendamentoid" +
-                    "FROM agendamento" +
-                    "WHERE local='null',datainicio='2020-06-30 12:00:00',datafim='2020-06-30 22:00:00'" +
-
-                    "   INSERT INTO pessoaagendamento (pessoaid, agendamentoid) " +
-                    "SELECT '5', agendamentoid" +
-                    "FROM agendamento" +
-                    "WHERE local='null',datainicio='2020-06-30 12:00:00',datafim='2020-06-30 22:00:00'" +
-
-                    "   INSERT INTO pessoaagendamento (pessoaid, agendamentoid) " +
-                    "SELECT '8', agendamentoid" +
-                    "FROM agendamento" +
-                    "WHERE local='null',datainicio='2020-06-30 12:00:00',datafim='2020-06-30 22:00:00'";
-            }
-            else
-            {
-                query = "Conflito de agendamentos";
-            }
-            ViewData["Menssagem"] = query;
+            ViewData["Menssagem"] = result;
             return View();
         }
 
@@ -94,18 +70,7 @@ namespace TesteTripletech.Controllers
             DateTime dataFim = DateTime.Parse(dataTexto[1]);
 
             Boolean result = _agendamentoService.Atualizar(Id, dataInicio, dataFim);
-            string query;
-            if (result)
-            {
-                query = "UPDATE agendamento" +
-                    "   SET datainicio = 2020-05-30 08:00:00, datafim = 2020-05-30 12:00:00" +
-                    "   WHERE id = 93";
-            }
-            else
-            {
-                query = "Conflito de agendamentos";
-            }
-            ViewData["Menssagem"] = query;
+            ViewData["Menssagem"] = result;
             return View();
         }
 

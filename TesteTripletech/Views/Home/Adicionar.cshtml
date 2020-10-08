@@ -1,9 +1,38 @@
 ﻿@{
     ViewData["Title"] = "Adicionar";
-    var texto = ViewData["Menssagem"];
+    var texto = (bool)ViewData["Menssagem"];
 }
 
-<h1>@texto</h1>
+<h1>Adicionar</h1>
+
+@if (texto)
+{
+    <text>
+        <p>INSERT INTO agendamento(local, datainicio, datafim)</p>
+        <p>VALUES('null', '2020-06-30 12:00:00', '2020-06-30 22:00:00')</p>
+        <p>INSERT INTO pessoaagendamento(pessoaid, agendamentoid)</p>
+        <p>SELECT '1', agendamentoid</p>
+        <p>FROM agendamento</p>
+        <p>WHERE local = 'null',datainicio = '2020-06-30 12:00:00',datafim = '2020-06-30 22:00:00'</p>
+        <p>INSERT INTO pessoaagendamento(pessoaid, agendamentoid)</p>
+        <p>SELECT '5', agendamentoid</p>
+        <p>FROM agendamento</p>
+        <p>WHERE local = 'null',datainicio = '2020-06-30 12:00:00',datafim = '2020-06-30 22:00:00'</p>
+        <p>INSERT INTO pessoaagendamento(pessoaid, agendamentoid)</p>
+        <p>SELECT '8', agendamentoid</p>
+        <p>FROM agendamento</p>
+        <p>WHERE local = 'null',datainicio = '2020-06-30 12:00:00',datafim = '2020-06-30 22:00:00'</p>
+    </text>
+}
+else
+{
+    <text>
+        <p>Conflito de agendamentos</p>
+    </text>
+}
+
+
+
 
 
 

@@ -1,9 +1,27 @@
 ﻿@{
     ViewData["Title"] = "Atualizar";
-    var texto = ViewData["Menssagem"];
+    var texto = (bool)ViewData["Menssagem"];
 }
 
-<h1>@texto</h1>
+<h1>Atualizar</h1>
+
+@if (texto)
+{
+    <text>
+        <p>UPDATE agendamento</p>
+        <p>SET datainicio = 2020-05-30 08:00:00, datafim = 2020-05-30 12:00:00</p>
+        <p>WHERE id = 93</p>
+    </text>
+}
+else
+{
+    <text>
+        <p>Conflito de agendamentos</p>
+    </text>
+}
+
+
+
 
 
 
