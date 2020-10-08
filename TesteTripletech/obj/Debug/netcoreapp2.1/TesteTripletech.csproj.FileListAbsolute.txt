@@ -63,3 +63,5 @@ C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\T
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\TesteTripletech.csproj.CopyComplete
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\TesteTripletech.csproj.CoreCompileInputs.cache
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\SimpleSearch.cshtml.g.cs
+C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\Adicionar.cshtml.g.cs
+C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\Atualizar.cshtml.g.cs
