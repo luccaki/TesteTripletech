@@ -21,10 +21,10 @@ namespace TesteTripletech.Services
                          from p in _context.pessoa
                          from pa in _context.pessoaagendamento
                          where a.Id == pa.agendamentoid && p.Id == pa.pessoaid
-                         select new PessoaAgendamento(pa.pessoaid, pa.agendamentoid, p.Nome, a.Local, a.DataInicio, a.DataFim);
+                         select new PessoaAgendamento(pa.pessoaid, pa.agendamentoid, p.Nome, a.Local, a.DataInicio.ToLocalTime(), a.DataFim.Date.ToLocalTime());
             if (data.HasValue)
             {
-                result = result.Where(x => x.DataInicio.Value.Month == data.Value.Month && x.DataInicio.Value.Year == data.Value.Year);
+                result = result.Where(x => x.DataInicio.Month == data.Value.Month && x.DataInicio.Year == data.Value.Year);
             }
             return result
                 .OrderByDescending(x => x.DataInicio)

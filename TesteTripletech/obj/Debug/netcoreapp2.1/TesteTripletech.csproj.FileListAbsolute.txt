@@ -65,3 +65,4 @@ C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\T
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\SimpleSearch.cshtml.g.cs
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\Adicionar.cshtml.g.cs
 C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\obj\Debug\netcoreapp2.1\Razor\Views\Home\Atualizar.cshtml.g.cs
+C:\Users\lucca\Desktop\TesteTripletech\TesteTripletech\bin\Debug\netcoreapp2.1\Properties\ServiceDependencies\TesteTripletech - Web Deploy\profile.arm.json

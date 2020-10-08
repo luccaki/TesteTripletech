@@ -76,7 +76,7 @@ Write(ViewData["Title"]);
             WriteLiteral("</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(82, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c658f149bb74344a0f6ef32490c71c1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "285d5a3332504fd5a1f3b60d0e45bf47", async() => {
                 BeginContext(132, 9, true);
                 WriteLiteral("Adicionar");
                 EndContext();
@@ -99,7 +99,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n    ");
             EndContext();
             BeginContext(151, 63, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6966f989e2ae494ca4607572bac55b67", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abe0303b5d2c45699990166cc7878bf5", async() => {
                 BeginContext(201, 9, true);
                 WriteLiteral("Atualizar");
                 EndContext();
@@ -122,7 +122,7 @@ Write(ViewData["Title"]);
             WriteLiteral("\r\n</p>\r\n\r\n<div class=\"row\">\r\n    <div class=\"col-md-6\">\r\n        ");
             EndContext();
             BeginContext(279, 720, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db84866d31cb4877b2306de7134bc2cd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "17f827141b834585973fc1f061909c7e", async() => {
                 BeginContext(335, 657, true);
                 WriteLiteral(@"
             <fieldset>
